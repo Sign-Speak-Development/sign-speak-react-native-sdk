@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.setKey = exports.submitFeedback = exports.recognizeSign = exports.produceSpeech = exports.produceSign = exports.SpeechRecognition = exports.SpeechProduction = exports.SignProduction = exports.SignRecognition = void 0;
+var SignProduction_1 = require("./components/SignProduction/SignProduction");
+Object.defineProperty(exports, "SignProduction", { enumerable: true, get: function () { return SignProduction_1.SignProduction; } });
+var SignRecognition_1 = require("./components/SignRecognition/SignRecognition");
+Object.defineProperty(exports, "SignRecognition", { enumerable: true, get: function () { return SignRecognition_1.SignRecognition; } });
+var SpeechProduction_1 = require("./components/SpeechProduction/SpeechProduction");
+Object.defineProperty(exports, "SpeechProduction", { enumerable: true, get: function () { return SpeechProduction_1.SpeechProduction; } });
+var SpeechRecognition_1 = require("./components/SpeechRecognition/SpeechRecognition");
+Object.defineProperty(exports, "SpeechRecognition", { enumerable: true, get: function () { return SpeechRecognition_1.SpeechRecognition; } });
+var adapter_1 = require("./network/adapter");
+Object.defineProperty(exports, "produceSign", { enumerable: true, get: function () { return adapter_1.produceSign; } });
+Object.defineProperty(exports, "produceSpeech", { enumerable: true, get: function () { return adapter_1.produceSpeech; } });
+Object.defineProperty(exports, "recognizeSign", { enumerable: true, get: function () { return adapter_1.recognizeSign; } });
+Object.defineProperty(exports, "submitFeedback", { enumerable: true, get: function () { return adapter_1.submitFeedback; } });
+var key_1 = require("./network/key");
+Object.defineProperty(exports, "setKey", { enumerable: true, get: function () { return key_1.setKey; } });
